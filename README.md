@@ -53,3 +53,12 @@ A simple and robust **Spring Boot** application to manage employee records with 
 ```bash
 git clone https://github.com/khushii-code/employe-managment.git
 cd employe-managment
+
+###  RUN Application
+mvn clean install
+java -jar target/employe-managment-0.0.1-SNAPSHOT.jar
+
+## Swagger ScreenShots-
+
+<img width="1918" height="1017" alt="{49DB6911-A92A-4806-B3FF-AEA44DDB76A7}" src="https://github.com/user-attachments/assets/eb542ab7-eb87-4bff-a521-38fa019ef8e1" />
+
