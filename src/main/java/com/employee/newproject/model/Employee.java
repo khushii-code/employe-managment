@@ -6,14 +6,18 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.PastOrPresent;
 import jakarta.validation.constraints.Positive;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Generated;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
 
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "employee",uniqueConstraints = @UniqueConstraint(columnNames = "email"))
 public class Employee{
 
@@ -32,6 +36,7 @@ public class Employee{
 
     @PastOrPresent
     private LocalDate joiningDate;
+
 
 }
 
